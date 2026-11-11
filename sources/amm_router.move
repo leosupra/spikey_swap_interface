@@ -42,5 +42,38 @@ module spike_amm::amm_router {
     ) {
         abort 0
     }
+
+    public entry fun swap_exact_tokens_for_tokens(
+        _sender: &signer,
+        _amount_in: u64,
+        _amount_out_min: u64,
+        _path: vector<address>,
+        _to: address,
+        _deadline: u64,
+    ) {
+        abort 0
+    }
+
+    public entry fun swap_exact_coin_for_tokens_beta<CoinType>(
+        _sender: &signer,
+        _amount_in: u64,
+        _amount_out_min: u64,
+        _path: vector<address>,
+        _to: address,
+        _deadline: u64,
+    ) {
+        abort 0
+    }
+
+    public entry fun swap_exact_tokens_for_coins_beta<CoinType>(
+        _sender: &signer,
+        _amount_in: u64,
+        _amount_out_coin_min: u64,
+        _path: vector<address>,
+        _to: address,
+        _deadline: u64,
+    ) {
+        abort 0
+    }
 }
 
